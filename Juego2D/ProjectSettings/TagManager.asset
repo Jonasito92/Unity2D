@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Detras
+    uniqueID: 4137311469
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Personaje
+    uniqueID: 1913746993
+    locked: 0
+  - name: Delante
+    uniqueID: 2176665999
     locked: 0

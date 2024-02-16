@@ -5,21 +5,11 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class Coin : MonoBehaviour
 {
-    public score puntos;
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    [SerializeField] private float cantidadPuntos;
+    [SerializeField] private score puntaje;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("me toco");
-        puntos.totalscore += 1;
+        puntaje.SumarPuntos(cantidadPuntos);
         Destroy(this.gameObject);
     }
 }

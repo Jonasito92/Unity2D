@@ -16,12 +16,14 @@ public class NewBehaviourScript : MonoBehaviour
     public bool isJumping;
     Animator animator;
     private bool canDoubleJump = true;
+    
 
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+       
     }
 
     void Update()
@@ -74,6 +76,7 @@ public class NewBehaviourScript : MonoBehaviour
                 isJumping = true;
                 animator.SetBool("isJumping", isJumping);
                 canDoubleJump = true;
+                
             }
             else
             {

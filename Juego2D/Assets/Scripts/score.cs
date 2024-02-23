@@ -15,7 +15,7 @@ public class score : MonoBehaviour
 
     private void Update()
     {
-        puntos += Time.deltaTime;
+        
         textMesh.text = puntos.ToString("0");
     }
 
